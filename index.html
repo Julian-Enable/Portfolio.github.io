@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Julian</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/hero.jpg" alt="" />
+        </div>
+        <h1>JULIAN MERCHAN</h1>
+        <h2>Ingeniero de Software</h2>
+        <div class="redes">
+          <a href="https://www.facebook.com/julian.merchan.56232"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://twitter.com/JulianMerchande"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com/eng.merchan/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/julian-gonzalez-merchan-46ba5524a/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Julian-Enable"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Julian Merchan.</span> Soy una persona proactiva,
+          flexible al cambio, con creatividad explosiva y una gran capacidad
+          para trabajar en equipo, asumiendo siempre los retos con agrado y las
+          metas que la organización me proponga, sin importar la presión.
+          Solucionaré los problemas eficientemente, manejando varias
+          herramientas y lenguajes para el desarrollo web y de software, cada
+          día aprendiendo un poco más con un enfoque constante. Habilidades en
+          Python, Java, HTML, CSS.
+        </p>
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                07-09-2001
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                3212441930
+              </li>
+              <li>
+                <strong>Email</strong>
+                engjuliangonzalez@gmail.com
+              </li>
+              <li>
+                <strong>Linkedin</strong>
+                /julian-gonzalez-merchan-46ba5524a/
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Rafael Uribe Uribe - Colombia
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-motorcycle"></i>
+                <span>MOTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-apple"></i>
+                <span>IOs</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-futbol"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-route"></i>
+                <span>RUTAS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i>
+                <span>FOTOGRAFIA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          <a href="pdf/mi_cv.pdf" download="mi_cv.pdf">
+            Descargar CV <i class="fa-solid fa-download"></i>
+          </a>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>45%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Photoshop</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Python</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>55%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Java</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>35%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicacion</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Eficiencia</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Mantenimiento de computo y redes</h4>
+              <span class="casa"
+                >Centro de educacion para el trabajo CAFAM</span
+              >
+              <span class="fecha">2017 - 2019</span>
+              <p>
+                Técnico Laboral por Competencias en Soporte de Equipos de
+                Cómputo y Redes
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Python basico y intermedio</h4>
+              <span class="casa">Netzun</span>
+              <span class="fecha">2023 - 2023</span>
+              <p>
+                Aprendizaje basico e intermedio del leguaje de programacion
+                python, dentro de la plataforma de estudios Netzun.com
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Ingenieria en Software</h4>
+              <span class="casa">Universidad Manuela Beltran</span>
+              <span class="fecha">2020 - Actualidad</span>
+              <p>
+                Estudiante de 6to semestre de ingenieria de Software en la
+                universidad Manuela Beltran
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Bodega - Asistente contable</h4>
+              <span class="casa">Camisetas Emirs</span>
+              <span class="fecha">2021 - 2022</span>
+              <p>
+                Empece como un auxiliar de bodega, al pasar algunas semanas
+                logre ascender a auxiliar en chats de atencion al cliente, luego
+                de ello a administrador de inventario manejado por la plataforma
+                Oddo, a consecuencia de mi esfuerzo y conocimientos en Excel
+                logre ascender a auxiliar contable.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Empleado General</h4>
+              <span class="casa">Digiblas Fotografia</span>
+              <span class="fecha">2019 - 2021</span>
+              <p>
+                En el local familiar era auxiliar en varios aspectos, y cumplia
+                varios trabajos, entre ellos asesor en ventas, fotografo en
+                estudio, editor de fotos, y armdado de marqueteria (cuadros de
+                fotos).
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>CEO Royal Perfum</h4>
+              <span class="casa">Royal Perfum</span>
+              <span class="fecha">2022 - Actualidad</span>
+              <p>
+                CEO de un pequeño local de perfumeria en el centro de a ciudad,
+                desde noviembre del año 2022, decidi manejar un local de manera
+                independiente.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <a href="https://www.mediafire.com/file/ek56guiqiigv7j6/genpassw.py/file">
+            <div class="proyecto">
+              <img src="img/p1.jpg" alt="" />
+              <div class="overlay">
+                <h2>GenPassw</h2>
+                <h5>Script generador de contraseñas, este adjunta tu correo y sitio web en el que vas a usar la contraseña generada, aparte te crea una carpeta y un archivo dentro del escritorio, este se sobreescribira cada vez que uses el script, asi que no habra archivos duplicados</h5>
+              </div>
+            </div>
+          </a>
+        <!-- </div>
+          <div class="proyecto">
+            <img src="img/p2.jpg" alt="" /> 
+            <div class="overlay">
+              <h3>Proyecto 2</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p3.jpg" alt="" />
+            <div class="overlay">
+              <h3>Proyecto 3</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p4.jpg" alt="" />
+            <div class="overlay">
+              <h3>Proyecto 4</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p5.jpg" alt="" />
+            <div class="overlay">
+              <h3>Proyecto 5</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p6.jpg" alt="" />
+            <div class="overlay">
+              <h3>Proyecto 6</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+         --></div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+
+            <input type="text" placeholder="Tú Nombre" />
+            <input type="text" placeholder="Número telefónico" />
+            <input type="text" placeholder="Dirección de correo" />
+            <input type="text" placeholder="Tema" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="img/ubicacion.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Rafael Uribe Uribe, San Jorge Sur
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Llamame: 3212441930
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: engjuliangonzalez@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://www.facebook.com/julian.merchan.56232"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/JulianMerchande"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/eng.merchan/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/julian-gonzalez-merchan-46ba5524a/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Julian-Enable"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
